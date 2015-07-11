@@ -2,12 +2,10 @@ package com.raizunne.redstonic.Item;
 
 import cofh.api.energy.IEnergyContainerItem;
 import com.raizunne.redstonic.Redstonic;
-import com.raizunne.redstonic.RedstonicItems;
 import com.raizunne.redstonic.Util.DrillUtil;
 import com.raizunne.redstonic.Util.Lang;
 import com.raizunne.redstonic.Util.Util;
 import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
@@ -26,8 +24,8 @@ import net.minecraft.util.*;
 import net.minecraft.world.World;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
-import scala.actors.threadpool.Arrays;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**

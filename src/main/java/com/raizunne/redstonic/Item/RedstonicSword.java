@@ -24,7 +24,6 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
 import java.util.List;
-import java.util.Locale;
 
 /**
  * Created by Raizunne as a part of Redstonic

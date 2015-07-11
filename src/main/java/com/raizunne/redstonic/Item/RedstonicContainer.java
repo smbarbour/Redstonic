@@ -1,13 +1,10 @@
 package com.raizunne.redstonic.Item;
 
-import com.google.common.eventbus.Subscribe;
 import com.raizunne.redstonic.Handler.ConfigHandler;
 import com.raizunne.redstonic.Redstonic;
 import com.raizunne.redstonic.RedstonicItems;
-import com.raizunne.redstonic.Util.Lang;
 import com.raizunne.redstonic.Util.Util;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -17,7 +14,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -28,8 +24,6 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import org.lwjgl.input.Keyboard;
-import org.lwjgl.opengl.GL11;
-import sun.security.krb5.Config;
 
 import java.util.ArrayList;
 import java.util.List;
