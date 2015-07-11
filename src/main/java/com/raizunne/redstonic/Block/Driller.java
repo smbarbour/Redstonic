@@ -1,22 +1,17 @@
 package com.raizunne.redstonic.Block;
 
 import com.raizunne.redstonic.Item.Drill.DrillHead;
-import com.raizunne.redstonic.Network.PacketDriller;
 import com.raizunne.redstonic.Redstonic;
-import com.raizunne.redstonic.TileEntity.TEDrillModifier;
 import com.raizunne.redstonic.TileEntity.TEDriller;
 import com.raizunne.redstonic.Util.DrillUtil;
-import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;

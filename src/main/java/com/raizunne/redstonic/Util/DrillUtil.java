@@ -1,7 +1,6 @@
 package com.raizunne.redstonic.Util;
 
 import com.raizunne.redstonic.Item.ItemBattery;
-import com.raizunne.redstonic.Redstonic;
 import com.raizunne.redstonic.RedstonicItems;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;

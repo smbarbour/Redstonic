@@ -1,7 +1,6 @@
 package com.raizunne.redstonic.Item.IRecipes;
 
 import com.raizunne.redstonic.RedstonicItems;
-import net.minecraft.block.Block;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;

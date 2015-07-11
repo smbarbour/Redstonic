@@ -1,9 +1,7 @@
 package com.raizunne.redstonic.Gui;
 
 import com.raizunne.redstonic.Gui.Container.ContainerDriller;
-import com.raizunne.redstonic.TileEntity.TEDrillModifier;
 import com.raizunne.redstonic.TileEntity.TEDriller;
-import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.entity.player.InventoryPlayer;

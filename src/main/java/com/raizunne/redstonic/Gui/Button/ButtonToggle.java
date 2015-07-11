@@ -1,7 +1,6 @@
 package com.raizunne.redstonic.Gui.Button;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.item.Item;

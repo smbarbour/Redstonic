@@ -1,6 +1,5 @@
 package com.raizunne.redstonic.Gui;
 
-import com.raizunne.redstonic.Gui.Button.ButtonDirectional;
 import com.raizunne.redstonic.Gui.Button.ButtonIcon;
 import com.raizunne.redstonic.Gui.Button.ButtonToggle;
 import com.raizunne.redstonic.Gui.Button.ButtonWidget;
@@ -20,18 +19,13 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.RenderHelper;
-import net.minecraft.client.util.RenderDistanceSorter;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.IIcon;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 

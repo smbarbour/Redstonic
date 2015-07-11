@@ -1,7 +1,5 @@
 package com.raizunne.redstonic.Gui.Slot;
 
-import com.raizunne.redstonic.Item.Drill.DrillAugment;
-import com.raizunne.redstonic.Item.Sword.SwordAugment;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;

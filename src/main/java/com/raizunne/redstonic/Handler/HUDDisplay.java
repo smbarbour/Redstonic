@@ -1,8 +1,6 @@
 package com.raizunne.redstonic.Handler;
 
 import com.raizunne.redstonic.Block.DrillModifier;
-import com.raizunne.redstonic.Item.Manual;
-import com.raizunne.redstonic.Item.RedstonicDrill;
 import com.raizunne.redstonic.RedstonicItems;
 import com.raizunne.redstonic.Util.Util;
 import net.minecraft.block.Block;

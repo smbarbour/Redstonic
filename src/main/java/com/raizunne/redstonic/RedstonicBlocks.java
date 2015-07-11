@@ -4,8 +4,6 @@ import com.raizunne.redstonic.Block.BlockCompressed;
 import com.raizunne.redstonic.Block.DrillModifier;
 import com.raizunne.redstonic.Block.Driller;
 import com.raizunne.redstonic.Block.HyperSmelter;
-import com.raizunne.redstonic.TileEntity.TEDrillModifier;
-import com.raizunne.redstonic.TileEntity.TEDriller;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

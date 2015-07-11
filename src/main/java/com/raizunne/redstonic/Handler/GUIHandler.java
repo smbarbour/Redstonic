@@ -9,7 +9,6 @@ import com.raizunne.redstonic.RedstonicItems;
 import com.raizunne.redstonic.TileEntity.TEDrillModifier;
 import com.raizunne.redstonic.TileEntity.TEDriller;
 import com.raizunne.redstonic.TileEntity.TEHyperSmelter;
-import com.raizunne.redstonic.Util.DrillUtil;
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import net.minecraft.entity.player.EntityPlayer;

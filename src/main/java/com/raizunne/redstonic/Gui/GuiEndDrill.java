@@ -3,7 +3,6 @@ package com.raizunne.redstonic.Gui;
 import com.raizunne.redstonic.RedstonicItems;
 import com.raizunne.redstonic.Util.DrillUtil;
 import cpw.mods.fml.client.config.GuiSlider;
-import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ChatComponentText;

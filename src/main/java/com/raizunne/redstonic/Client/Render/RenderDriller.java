@@ -2,7 +2,6 @@ package com.raizunne.redstonic.Client.Render;
 
 import com.raizunne.redstonic.Client.Model.ModelDrillHead;
 import com.raizunne.redstonic.Client.Model.ModelDriller;
-import com.raizunne.redstonic.TileEntity.TEDrillModifier;
 import com.raizunne.redstonic.TileEntity.TEDriller;
 import com.raizunne.redstonic.Util.DrillUtil;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;

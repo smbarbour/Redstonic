@@ -3,8 +3,6 @@ package com.raizunne.redstonic.Gui;
 import com.raizunne.redstonic.Gui.Container.ContainerHyperSmelter;
 import com.raizunne.redstonic.TileEntity.TEHyperSmelter;
 import com.raizunne.redstonic.Util.Lang;
-import net.minecraft.block.BlockFurnace;
-import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.entity.player.InventoryPlayer;

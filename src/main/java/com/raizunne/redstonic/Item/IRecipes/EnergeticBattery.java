@@ -2,7 +2,6 @@ package com.raizunne.redstonic.Item.IRecipes;
 
 import com.raizunne.redstonic.Item.ItemBattery;
 import com.raizunne.redstonic.RedstonicItems;
-import com.raizunne.redstonic.Util.Util;
 import net.minecraft.init.Blocks;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;

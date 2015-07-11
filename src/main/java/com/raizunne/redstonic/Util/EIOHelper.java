@@ -1,6 +1,5 @@
 package com.raizunne.redstonic.Util;
 
-import com.raizunne.redstonic.Redstonic;
 import cpw.mods.fml.common.event.FMLInterModComms;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;

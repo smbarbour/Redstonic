@@ -10,7 +10,6 @@ import com.raizunne.redstonic.Item.RedstonicSword;
 import com.raizunne.redstonic.Item.Sword.SwordAugment;
 import com.raizunne.redstonic.Item.Sword.SwordBlade;
 import com.raizunne.redstonic.Item.Sword.SwordHandle;
-import com.raizunne.redstonic.RedstonicItems;
 import com.raizunne.redstonic.TileEntity.TEDrillModifier;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -18,7 +17,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 /**

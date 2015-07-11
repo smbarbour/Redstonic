@@ -1,7 +1,6 @@
 package com.raizunne.redstonic.Block;
 
 import com.raizunne.redstonic.Redstonic;
-import com.raizunne.redstonic.TileEntity.TEDrillModifier;
 import com.raizunne.redstonic.TileEntity.TEHyperSmelter;
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 import net.minecraft.block.Block;
