@@ -1,1 +1,1 @@
-You can now rename tools! Complete Redstonic Modifier Revamped! (also fixed lots of bugs!).
+Fixed replacing blocks with torches on right click, added new Low Power Mode for End Drill.
