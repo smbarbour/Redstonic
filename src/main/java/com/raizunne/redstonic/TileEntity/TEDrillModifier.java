@@ -472,9 +472,7 @@ public class TEDrillModifier extends TileEntity implements IInventory {
     @Override
     public void writeToNBT(NBTTagCompound compound) {
         super.writeToNBT(compound);
-
         NBTTagList items = new NBTTagList();
-
         for (int i = 0; i < getSizeInventory(); i++) {
             ItemStack stack = getStackInSlot(i);
 

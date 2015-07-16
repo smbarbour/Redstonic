@@ -174,6 +174,7 @@ public class RedstonicDrill extends ItemPickaxe implements IEnergyContainerItem 
         if (player.isSneaking()) {
             MovingObjectPosition pos = this.getMovingObjectPositionFromPlayer(world, player, true);
             if(pos==null && stack.stackTagCompound.getInteger("head")==7){
+//                player.openGui(Redstonic.instance, 5, world, (int)player.posX, (int)player.posY, (int)player.posZ);
                 if(nbt.getBoolean("mode")){
                     nbt.setBoolean("mode", false);
                     player.playSound("random.pop", 1.0F, 1.0F);
@@ -198,14 +199,8 @@ public class RedstonicDrill extends ItemPickaxe implements IEnergyContainerItem 
                     player.playSound("note.bass", 1F, 1F);
                 }
             }
-            if (hasAugment(3, stack) && checkEnergy(stack, 1500) && pos==null) {
-                if (nbt.getInteger("hotswapHead") != -1) {
-                    int temp = nbt.getInteger("head");
-                    nbt.setInteger("head", nbt.getInteger("hotswapHead"));
-                    nbt.setInteger("hotswapHead", temp);
-                    takeEnergy(stack, 1500);
-                    player.playSound("random.pop", 1.0F, 1.0F);
-                }
+            if (hasAugment(3, stack) && checkEnergy(stack, 1500)) {
+                hotswap(stack, player);
             }
         }
         return stack;
@@ -358,6 +353,17 @@ public class RedstonicDrill extends ItemPickaxe implements IEnergyContainerItem 
 
                 }
             }
+        }
+    }
+
+    public void hotswap(ItemStack stack, EntityPlayer player){
+        NBTTagCompound nbt = stack.stackTagCompound;
+        if (nbt.getInteger("hotswapHead") != -1) {
+            int temp = nbt.getInteger("head");
+            nbt.setInteger("head", nbt.getInteger("hotswapHead"));
+            nbt.setInteger("hotswapHead", temp);
+            takeEnergy(stack, 1500);
+            player.playSound("random.pop", 1.0F, 1.0F);
         }
     }
 
