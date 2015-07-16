@@ -695,12 +695,20 @@ public class RedstonicDrill extends ItemPickaxe implements IEnergyContainerItem 
 
     @Override
     public int getEnergyStored(ItemStack container) {
-        return container.stackTagCompound.getInteger("energy");
+	if (container != null) {
+	        return container.stackTagCompound.getInteger("energy");
+	} else {
+		return 0;
+	}
     }
 
     @Override
     public int getMaxEnergyStored(ItemStack container) {
-        return container.stackTagCompound.getInteger("maxEnergy");
+	if (container != null) {
+	        return container.stackTagCompound.getInteger("maxEnergy");
+	} else {
+		return 0;
+	}
     }
 
     @Override

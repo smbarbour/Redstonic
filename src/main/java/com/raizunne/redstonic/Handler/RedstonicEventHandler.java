@@ -31,6 +31,8 @@ import net.minecraftforge.event.world.BlockEvent;
  */
 public class RedstonicEventHandler {
 
+    private static boolean notified = false;
+
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
     public void RenderGameOverlayEvent(RenderGameOverlayEvent event){
@@ -73,17 +75,20 @@ public class RedstonicEventHandler {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            if (!ClientProxy.version.equals("") && !ClientProxy.version.equals(Redstonic.VERSION) && !ClientProxy.version.equals("0.0")) {
-                if(Minecraft.getMinecraft().theWorld.isRemote) {
-                    String beg = EnumChatFormatting.RED + "Redstonic " + EnumChatFormatting.WHITE + "Outdated! New version is " + EnumChatFormatting.YELLOW + ClientProxy.version + EnumChatFormatting.WHITE;
-                    IChatComponent component = IChatComponent.Serializer.func_150699_a("[\"\",{\"text\":\"Redstonic \",\"color\":\"red\",\"bold\":\"true\"},{\"text\":\"outdated! New version is " + ClientProxy.version + "." + "\",\"color\":\"none\",\"bold\":\"false\"},{\"text\":\" [Download]\",\"color\":\"gold\",\"bold\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"" + ClientProxy.downloadLink + "\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"\",\"extra\":[{\"text\":\"Open CurseForge page.\"}]}}}]");
-                    Minecraft.getMinecraft().thePlayer.addChatComponentMessage(component);
-                    Minecraft.getMinecraft().thePlayer.addChatComponentMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "Changes: " + EnumChatFormatting.WHITE + ClientProxy.newChangelog));
-                }
-            }else {
-                FMLLog.info("[REDSTONIC]: Using latest version.");
-            }
-        }
+	    if (!notified) {
+		    if (!ClientProxy.version.equals("") && !ClientProxy.version.equals(Redstonic.VERSION) && !ClientProxy.version.equals("0.0")) {
+			    if(Minecraft.getMinecraft().theWorld.isRemote) {
+				    String beg = EnumChatFormatting.RED + "Redstonic " + EnumChatFormatting.WHITE + "Outdated! New version is " + EnumChatFormatting.YELLOW + ClientProxy.version + EnumChatFormatting.WHITE;
+				    IChatComponent component = IChatComponent.Serializer.func_150699_a("[\"\",{\"text\":\"Redstonic \",\"color\":\"red\",\"bold\":\"true\"},{\"text\":\"outdated! New version is " + ClientProxy.version + "." + "\",\"color\":\"none\",\"bold\":\"false\"},{\"text\":\" [Download]\",\"color\":\"gold\",\"bold\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"" + ClientProxy.downloadLink + "\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"\",\"extra\":[{\"text\":\"Open CurseForge page.\"}]}}}]");
+				    Minecraft.getMinecraft().thePlayer.addChatComponentMessage(component);
+				    Minecraft.getMinecraft().thePlayer.addChatComponentMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "Changes: " + EnumChatFormatting.WHITE + ClientProxy.newChangelog));
+				    notified = true;
+			    }
+		    }else {
+			    FMLLog.info("[REDSTONIC]: Using latest version.");
+		    }
+	    }
+	}
     }
 
     @SubscribeEvent
