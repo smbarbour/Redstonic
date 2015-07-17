@@ -214,11 +214,18 @@ public class ItemBattery extends Item implements IEnergyContainerItem {
 
     @Override
     public int getEnergyStored(ItemStack container) {
-        return container.stackTagCompound.getInteger("Energy");
+        try {
+            return container.stackTagCompound.getInteger("Energy");
+        } catch (NullPointerException e) {
+            return 0;
+        }
     }
 
     @Override
     public int getMaxEnergyStored(ItemStack container) {
-        return container.stackTagCompound.getInteger("maxEnergy");
-    }
-}
+        try {
+            return container.stackTagCompound.getInteger("maxEnergy");
+        } catch (NullPointerException e) {
+            return 0;
+        }
+    }}

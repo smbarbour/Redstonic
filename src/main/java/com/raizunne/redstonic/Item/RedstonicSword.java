@@ -344,13 +344,21 @@ public class RedstonicSword extends Item implements IEnergyContainerItem {
         return 0;
     }
 
-    @Override
-    public int getEnergyStored(ItemStack container) {
-        return container.stackTagCompound.getInteger("Energy");
-    }
+	@Override
+	public int getEnergyStored(ItemStack container) {
+		try {
+			return container.stackTagCompound.getInteger("Energy");
+		} catch (NullPointerException e) {
+			return 0;
+		}
+	}
 
-    @Override
-    public int getMaxEnergyStored(ItemStack container) {
-        return container.stackTagCompound.getInteger("MaxEnergy");
-    }
+	@Override
+	public int getMaxEnergyStored(ItemStack container) {
+		try {
+			return container.stackTagCompound.getInteger("MaxEnergy");
+		} catch (NullPointerException e) {
+			return 0;
+		}
+	}
 }
